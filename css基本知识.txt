@@ -1,0 +1,63 @@
+style的优先级是从高到低
+!important
+
+display 属性
+    block
+    inline
+    inline-block
+block 占一行
+默认 block 的标签有
+div p ul ol li h1 h2 h3 h4 h5 h6
+inline 只占 content 的尺寸
+inline-block 是 inline 布局 block 模式
+inline-block 对外表现为inline，所以可以和别的 inline 放在一行
+对内表现为block，所以可以设置自身的宽高
+盒模型, inline 元素没有盒模型
+
+盒模型元素
+border//边框
+border-style: solid;//样式
+border-width: 10px;//大小
+border-color: green;//颜色
+border: 10px green solid;//简写
+border-top-color: red;//单边处理
+border-radius: 31px;//圆角
+border-radius:50%;//圆形
+border-top-left-radius:10px//左上角是圆角
+
+margin:top right bottom left;//块外
+
+padding:top right bottom left;//块内
+
+position//元素定位
+	static//默认定位
+	relative//相对定位
+	absolute//绝对定位
+	fixed//浮动定位不随页面滚动
+	非static元素可以用z-index来设置元素层次
+	内部位置定位实例
+        .nextbt{
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform:translateY(-50%);
+            height: 100px;
+        }
+
+overflow属性
+	visible默认属性
+	auto需要的时候加滚动条
+	hidden隐藏多余元素
+	scroll强加滚动条
+
+viewport//手机网页用的设置
+viewport 是 html 的父元素
+在手机上需要用下面的语句设置它的尺寸
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+属性解释
+width=device-width      宽度等于设备宽度
+height=device-height    高度等于设备高度
+initial-scale           初始缩放比例
+minimum-scale           允许用户缩放的最小比例
+maximum-scale           允许用户缩放的最大比例
+user-scalable           是否允许用户缩放
