@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css常用样式</title>
+    <style>
+        /* 这里是闪动动画，无限次数，infinite为次数无限，也可以写入数字，alternate为偶数个周期，reverse为奇数周期 ,reverse为反转周期， to那里可以替换为50%*/
+        @keyframes blink-smooth {to {color: transparent}}
+		.highlight{
+			animation: 1s blink-smooth infinite alternate;
+		}
+        /*  */
+    </style>
+</head>
+<body>
+    <p class="highlight">这是会闪动的</p>
+</body>
+</html>
